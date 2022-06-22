@@ -49,7 +49,7 @@ module.exports.run = async ({ api, event, args, getText }) => {
 		for (const idThread of allThread) {
 			if (isNaN(parseInt(idThread)) || idThread == event.threadID) ""
 			else {
-				api.sendMessage({ body: "» 𝑻𝒉𝒐̂𝒏𝒈 𝑩𝒂́𝒐 𝑻𝒖̛̀ 𝑨𝒅𝒎𝒊𝒏 «\n\n" + args.join(` `), attachment: fs.createReadStream(path) }, idThread, (error, info) => {
+				api.sendMessage({ body: "» 𝑻𝒉𝒐̂𝒏𝒈 𝒃𝒂́𝒐 𝒕𝒖̛̀ 𝒄𝒉𝒖̉ 𝑩𝒐𝒕 «\n\n" + args.join(` `), attachment: fs.createReadStream(path) }, idThread, (error, info) => {
 					if (error) cantSend.push(idThread);
 				});
 				count++;

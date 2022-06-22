@@ -29,7 +29,7 @@ module.exports.onLoad = async function() {
     const path = resolve(__dirname, 'cache', 'lang-data.json');
 
     try {
-        var AllLang = (await axios.get("https://raw.githubusercontent.com/DaoKhanhDuy/Module-Miraiv2/Mew/data/lang-vie.json")).data;
+        var AllLang = (await axios.get("https://raw.githubusercontent.com/DaoKhanhDuy/Module-Miraiv2/Mew/data/lang.json")).data;
     }
     catch {
         var AllLang = [];
